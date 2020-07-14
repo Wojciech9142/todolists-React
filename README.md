@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## You can check demo here: 
+[Live](https://wojciech9142.github.io/todolists-React/)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
