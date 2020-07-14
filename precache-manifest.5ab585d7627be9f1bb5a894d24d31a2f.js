@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ab7442637fdc9696c391599e1ec0cc4a",
+    "revision": "4222c6e8970683776429622ac99adc2f",
     "url": "/todolists-React/index.html"
   },
   {
