@@ -1,16 +1,16 @@
-.tasksListOptions{
+.tasksListOptions {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
 
-@media(max-width:787px){
-    .tasksListOptions{
+@media(max-width:787px) {
+    .tasksListOptions {
         grid-template-columns: 1fr;
     }
 }
 
-.taskListOptions__button{
+.taskListOptions__button {
     background: transparent;
     border: none;
     color: hsl(180, 100%, 35%);
@@ -18,16 +18,16 @@
     transition: color .3s;
 }
 
-.taskListOptions__button--visible{
+.taskListOptions__button--visible {
     display: block;
 }
 
-.taskListOptions__button:hover{
+.taskListOptions__button:hover {
     color: hsl(180, 100%, 45%);
     cursor: pointer;
 }
 
-.taskListOptions__button:disabled{
+.taskListOptions__button:disabled {
     color: grey;
     cursor: initial;
 }
