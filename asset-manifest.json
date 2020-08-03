@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/todolists-React/static/css/main.84fe6e8a.chunk.css",
-    "main.js": "/todolists-React/static/js/main.ff521ea0.chunk.js",
-    "main.js.map": "/todolists-React/static/js/main.ff521ea0.chunk.js.map",
+    "main.js": "/todolists-React/static/js/main.03096d3c.chunk.js",
+    "main.js.map": "/todolists-React/static/js/main.03096d3c.chunk.js.map",
     "runtime-main.js": "/todolists-React/static/js/runtime-main.500b4c3f.js",
     "runtime-main.js.map": "/todolists-React/static/js/runtime-main.500b4c3f.js.map",
-    "static/js/2.f58a2cb7.chunk.js": "/todolists-React/static/js/2.f58a2cb7.chunk.js",
-    "static/js/2.f58a2cb7.chunk.js.map": "/todolists-React/static/js/2.f58a2cb7.chunk.js.map",
+    "static/js/2.49298c4f.chunk.js": "/todolists-React/static/js/2.49298c4f.chunk.js",
+    "static/js/2.49298c4f.chunk.js.map": "/todolists-React/static/js/2.49298c4f.chunk.js.map",
     "index.html": "/todolists-React/index.html",
-    "precache-manifest.fee506c4c91d0ba3f41f6287acb863a7.js": "/todolists-React/precache-manifest.fee506c4c91d0ba3f41f6287acb863a7.js",
+    "precache-manifest.6c9ebafdfb8c225bf9866090fc7a10c2.js": "/todolists-React/precache-manifest.6c9ebafdfb8c225bf9866090fc7a10c2.js",
     "service-worker.js": "/todolists-React/service-worker.js",
     "static/css/main.84fe6e8a.chunk.css.map": "/todolists-React/static/css/main.84fe6e8a.chunk.css.map",
-    "static/js/2.f58a2cb7.chunk.js.LICENSE.txt": "/todolists-React/static/js/2.f58a2cb7.chunk.js.LICENSE.txt"
+    "static/js/2.49298c4f.chunk.js.LICENSE.txt": "/todolists-React/static/js/2.49298c4f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.500b4c3f.js",
-    "static/js/2.f58a2cb7.chunk.js",
+    "static/js/2.49298c4f.chunk.js",
     "static/css/main.84fe6e8a.chunk.css",
-    "static/js/main.ff521ea0.chunk.js"
+    "static/js/main.03096d3c.chunk.js"
   ]
 }
