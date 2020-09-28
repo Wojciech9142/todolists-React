@@ -1,30 +1,37 @@
 import React from "react";
 import "./style.css";
+import { useSelector, useDispatch } from 'react-redux';
+import { selectTasks, toggleTaskDone, removeTask } from '../tasksSlice';
 
-const TaskList = ({ toggleTaskDone, tasks, hideDone, removeTask }) => (
-    <ul className="tasksList">
-        {tasks.map(task => (
-            <li
-                key={task.id} className={`taskList__item${task.done && hideDone ? " taskList__item--hidden" : ""}`}
-            >
-                <div
-                    onClick={() => toggleTaskDone(task.id)}
-                    className="taskList__toggleButton"
+const TaskList = () => {
+    const { tasks, hideDone } = useSelector(selectTasks);
+    const dispatch = useDispatch();
+    return (
+        <ul className="tasksList">
+            {tasks.map(task => (
+                <li
+                    key={task.id} className={`taskList__item${task.done && hideDone ? " taskList__item--hidden" : ""}`}
                 >
-                    {(task.done) ? "✔" : ""}
-                </div>
-                <span className={`${task.done ? "taskList__item--done" : ""} `} >
-                    {task.content}
-                </span>
-                <div
-                    onClick={() => removeTask(task.id)}
-                    className="taskList__removeButton"
-                >
-                    🗑
-                </div>
-            </li>
-        ))}
-    </ul>
-);
+                    <div
+                        onClick={() => dispatch(toggleTaskDone(task.id))}
+                        className="taskList__toggleButton"
+                    >
+                        {(task.done) ? "✔" : ""}
+                    </div>
+                    <span className={`${task.done ? "taskList__item--done" : ""} `} >
+                        {task.content}
+                    </span>
+                    <div
+                        onClick={() => dispatch(removeTask(task.id))}
+                        className="taskList__removeButton"
+                    >
+                        🗑
+                    </div>
+                </li>
+            ))}
+        </ul>
+    );
+}
+
 
 export default TaskList;
