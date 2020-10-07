@@ -14,6 +14,7 @@ const Buttons = () => {
     const areTasksEmpty = useSelector(selectAreTasksEmpty);
     const isEveryTaskDone = useSelector(selectIsEveryTaskDone);
     const hideDone = useSelector(selectHideDone);
+    console.log(hideDone);
 
     const dispatch = useDispatch();
 

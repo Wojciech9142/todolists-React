@@ -1,37 +1,37 @@
 import React from "react";
-import "./style.css";
 import { useSelector, useDispatch } from 'react-redux';
 import { selectTasks, toggleTaskDone, removeTask, selectHideDone } from '../tasksSlice';
+import { Tasks, Button, TaskItem, TaskContent } from './styled';
 
 const TaskList = () => {
-    const tasks = useSelector(selectTasks);
-    const hideDone = useSelector(selectHideDone);
-    const dispatch = useDispatch();
-    return (
-        <ul className="tasksList">
-            {tasks.map(task => (
-                <li
-                    key={task.id} className={`taskList__item${task.done && hideDone ? " taskList__item--hidden" : ""}`}
-                >
-                    <div
-                        onClick={() => dispatch(toggleTaskDone(task.id))}
-                        className="taskList__toggleButton"
-                    >
-                        {(task.done) ? "✔" : ""}
-                    </div>
-                    <span className={`${task.done ? "taskList__item--done" : ""} `} >
-                        {task.content}
-                    </span>
-                    <div
-                        onClick={() => dispatch(removeTask(task.id))}
-                        className="taskList__removeButton"
-                    >
-                        🗑
-                    </div>
-                </li>
-            ))}
-        </ul>
-    );
+  const tasks = useSelector(selectTasks);
+  const hideDone = useSelector(selectHideDone);
+  const dispatch = useDispatch();
+  return (
+    <Tasks className="tasksList">
+      {tasks.map(task => (
+        <TaskItem
+          key={task.id} hidden={hideDone && task.done}
+        >
+          <Button
+            onClick={() => dispatch(toggleTaskDone(task.id))}
+            toggle
+          >
+            {(task.done) ? "✔" : ""}
+          </Button>
+          <TaskContent done={task.done} >
+            {task.content}
+          </TaskContent>
+          <Button
+            onClick={() => dispatch(removeTask(task.id))}
+            remove
+          >
+            🗑
+                    </Button>
+        </TaskItem>
+      ))}
+    </Tasks>
+  );
 };
 
 

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useDispatch } from 'react-redux';
-import "./style.css";
 import { addTask } from '../tasksSlice';
 import { nanoid } from "@reduxjs/toolkit";
+import { Form, Input, Button } from './styled'
 
-const Form = () => {
+const FormElement = () => {
     const [newTaskContent, setNewTaskContent] = useState("");
 
     const dispatch = useDispatch();
@@ -22,16 +22,16 @@ const Form = () => {
     };
 
     return (
-        <form className="form" onSubmit={onFormSubmit}>
-            <input
+        <Form onSubmit={onFormSubmit}>
+            <Input
                 value={newTaskContent}
                 className="form__inputElement"
                 placeholder="Co jest do zrobienia?"
                 onChange={({ target }) => setNewTaskContent(target.value)}
             />
-            <button className="form__buttonElement">Dodaj zadanie</button>
-        </form>
+            <Button>Dodaj zadanie</Button>
+        </Form>
     );
 };
 
-export default Form;
+export default FormElement;
