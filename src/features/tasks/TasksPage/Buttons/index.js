@@ -7,7 +7,7 @@ import {
     setAllDone,
     fetchExampleTasks,
     selectIsEveryTaskDone
-} from "../tasksSlice";
+} from "../../tasksSlice";
 import { Button, Wrapper } from './styled';
 
 const Buttons = () => {

@@ -7,12 +7,7 @@ export const Form = styled.form`
 
     @media(max-width: 787px) {
         grid-template-columns: 1fr;
-}
-`;
-
-export const Input = styled.input`
-    padding: 10px;
-`;
+}`;
 
 export const Button = styled.button`
     border: none;
