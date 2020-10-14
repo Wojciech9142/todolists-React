@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, NavLink, Route, Switch } from 'react-router-dom';
+import { HashRouter, NavLink, Redirect, Route, Switch } from 'react-router-dom';
 import Author from './features/author/Author';
 import TaskPage from './features/tasks/TaskPage';
 import TasksPage from './features/tasks/TasksPage'
@@ -30,6 +30,9 @@ function App() {
           </Route>
           <Route path="/author">
             <Author />
+          </Route>
+          <Route path="/">
+            <Redirect to="/zadania" />
           </Route>
         </Switch>
       </StyledNav>
