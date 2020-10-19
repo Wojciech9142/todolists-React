@@ -1,9 +1,9 @@
 import React from 'react';
-import { HashRouter, NavLink, Redirect, Route, Switch } from 'react-router-dom';
+import { HashRouter, Redirect, Route, Switch } from 'react-router-dom';
 import Author from './features/author/Author';
 import TaskPage from './features/tasks/TaskPage';
 import TasksPage from './features/tasks/TasksPage'
-import { StyledNav, StyledNavLink , StyledUl, StyledLi } from './styled';
+import { StyledNav, StyledNavLink, StyledUl, StyledLi } from './styled';
 
 function App() {
   return (
