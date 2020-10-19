@@ -3,16 +3,18 @@ import { NavLink } from 'react-router-dom';
 const activeClassName = "active";
 
 export const StyledNav = styled.nav`
-    padding: 20px;
+
 `;
 
 export const StyledUl = styled.ul`
-    background: green;
+    background: hsl(180,100%,25%);
     padding: 30px;
+    margin: 0;
     display: grid;
     list-style: none;
     grid-template-columns: 90px 90px;
     justify-content:center;
+    box-shadow: 0 0 20px 20px #CCCCCC;
 `;
 
 export const StyledLi = styled.li`
@@ -23,7 +25,7 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
     activeClassName,
 }))`
     &.${activeClassName} {
-        color: blue;
+        color: white;
     }
 
     text-decoration: none;
